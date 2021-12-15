@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Muli', Elephant;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: lightyellow;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table .header {
+    background-color: honeydew;
+}
+
+td,
+th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color:gray;
+}

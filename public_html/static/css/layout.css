@@ -1,0 +1,11 @@
+.navbar{
+    background:teal;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around}
+.navbar a {
+    text-decoration: none;
+    line-height: 60px;
+}
+

@@ -1,0 +1,231 @@
+{% extends '/layout.html' %}
+{% block head %}
+  <style>
+    body{background-color:powderblue;}
+    .history {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    .b1{
+      font-family: Georgia;
+      background: transparent;
+      text-decoration-color: lightslategray;
+    }
+    .history > h1 {
+      margin: 10px;
+      padding: 5px;
+      background-color:transparent;
+    }
+
+    header{
+      text-align: center;
+      color:whitesmoke;
+
+    }
+
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: darkslategrey;
+      color: white;
+    }
+    .subHistory {
+      margin: 4px;
+      font-family: Georgia;
+      background: white;
+      margin:5px;
+      padding:5px;
+    }
+    header {
+      width: 1250px;
+      height: 90px;
+      background-color:teal;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+
+<header>
+    <h1>OOPS</h1>
+</header>
+
+<article class="subHistory">
+
+    <ul>
+        <img src="/static/oops.jpeg" alt="oops" style="width:100% ; height:auto">
+        <li></li>
+        <li>pylint</li>
+
+        <p>
+            Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for
+            code smells. It can also look for certain type errors, it can recommend suggestions
+            about how particular blocks can be refactored and can offer you details about the code's complexity.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>tips and tricks</li>
+        <p>
+        <p>To run and install pylint in windows we have to use certain commands they are:</p>
+        <p>pip install pylint(To install pylint)</p>
+        <p>pylint fileName.py(To get full report)</p>
+        <p>pylint -rn fileName.py(To get Errors and warnings)</p>
+        <p>pylint -E fileName.py(To get Errors)</p>
+        <p>pylint-gui(To run GUI)</p>
+        <p>To integrate PYLINT to PYCHARM:</p>
+        <p> 1) File/Settings/Tools/External Tools/</p>
+        <p> 2) Click Add '+' button</p>
+        <p> 3) Fill in the arguments</p>
+        <p>   a) Name: pylint</p>
+        <p>   b) Program: C:\Python27\Scripts\pylint</p>
+        <p>   c) Parameters: --rcfile ...\mantid\tools\Pylint\pylint.cfg
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Factory</li>
+        <p>
+            In factory pattern, objects are created without exposing the logic to client and referring to the newly created object using a common interface. Factory patterns are implemented in Python using factory method.
+            The type of object used in factory method is determined by string which is passed through method.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Instantiation</li>
+        <p>
+            The phrase instantiating a class means the same thing as creating an object.
+            When you create an object you are creating an "instance" of a class therefore instantiating a class.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Object:</li>
+        <p>
+            An Object is an instance of a Class. A class is like a blueprint while an instance is a copy of the class with actual values.
+            Python is object-oriented programming language which stress on objects i.e., it mainly emphasizes on functions
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Class:</li>
+        <p>
+
+            A class is a user-defined blueprint or prototype from which objects are created. Classes provide a means of bundling data and functionality together.
+            Creating a new class creates a new type of object, allowing new instances of that type to be made
+        </p>
+    </ul>
+</article>
+
+<article class="subHistory">
+    <ul>
+        <li>Namespace:</li>
+        <p>
+            Python implements namespaces as dictionaries.
+            Imagine it as a name-to-object mapping where names are the keys and objects are the values.
+            A namespace allows us to have unique names for each object. If you don't know,
+            this is just a quick reminder to tell you that strings, lists, functions, etc.
+        </p>
+    </ul>
+</article>
+
+<article class="subHistory">
+    <ul>
+        <li>Constructor:</li>
+        <p>
+            A constructor is a special kind of method that Python calls when
+            it instantiates an object using the definitions found in your class.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Fixture:</li>
+        <p>
+            Fixtures define the steps and data that constitute the arrange phase of a test.
+            In pytest, they are functions you define that serve this purpose.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Unit test:</li>
+        <p>
+            Unit Testing in Python. ... Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use (Source). It determines and ascertains the quality of your code.
+
+
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Static:</li>
+        <p>
+            When we declare a variable inside a class but outside any method, it is called as class or static variable in python. Class or static variable can be referred through a class but not directly through an instance.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>class method:</li>
+        <p>
+            A class method is a method which is bound to the class and not the object of the class. They have the access to the state of the class as it takes a class parameter that points to the class and not the object instance. It can modify a class state that would apply across all the instances of the class.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Facade:</li>
+        <p>
+            Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework. While Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Design patterns: </li>
+        <p>
+            Class Creational Pattern and the Object Creational pattern is the major categorization of the Creational Design Patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
+        </p>
+    </ul>
+</article>
+
+<article class="subHistory">
+    <ul>
+        <li> Method:</li>
+        <p>
+
+            Function in python is called as a called method
+            Methods in python are very similar to functions except for two major differences. The method is implicitly used for an object for which it is called. The method is accessible to data that is contained within the class.
+
+        </p>
+    </ul>
+</article>
+<article class="subHistory">
+    <ul>
+        <li>Property:</li>
+        <p>
+
+            The property () method in Python provides an interface to instance attributes. It encapsulates instance attributes and provides a property, same as Java and C#. The property () method takes the get, set and delete methods as arguments and returns an object of the property class.
+
+
+
+
+
+        </p>
+    </ul>
+</article>
+<footer>
+  <p>OOPS<br> </p>
+    <a href="brahma:bk347@njit.edu">sc295@njit.edu</a><br>
+    <a href="https://validator.w3.org/nu/#file">W3C</a>
+
+</footer>
+
+{% endblock %}

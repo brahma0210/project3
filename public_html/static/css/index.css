@@ -1,0 +1,82 @@
+* {
+
+    font-family: 'Muli', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:url("/static/bgindex.jpg");
+}
+
+.calculator-div {
+    left: 50%;
+    top: 30%;
+    width: 1200px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    position: absolute;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.calculator-div img {
+    margin-bottom: 10px;
+}
+
+.calculator-div input[type=number] {
+    width: 45%;
+    border: 3px solid #aaaaaa;
+    height: 40px;
+    font-size: 25px;
+    margin: 20px 1%;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.calculator-div a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: gray;
+    font-size: 15px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+    margin: 0 auto;
+}
+
+.calculator-div select {
+    border: 3px solid #aaaaaa;
+    height: 35px;
+    font-size: 20px;
+    width: 92%;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.calculator-div input[type=submit] {
+    text-transform: uppercase;
+    color: white;
+    background: red;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.calculator-div .result {
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 20px 0;
+}

@@ -1,0 +1,27 @@
+{% extends '/layout.html' %}
+{% block head %}
+    <title>Calculator - Home</title>
+
+    <link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block body %}
+    <div class="calculator-div">
+        <img src="/static/calchead.jpg" style="width:1200px ; height:60px" />
+        <img src="/static/favicon.jpg" style="width:60px ; height:60px" />
+        <a href="/history">view history</a>
+        <form onsubmit="calculate(this)">
+            <input name="num1" type="number" placeholder="VALUE 1" required />
+            <input name="num2" type="number" placeholder="VALUE 2" required />
+            <select name="type" required>
+                <option value="addition">SUM</option>
+                <option value="substraction">DIFFERENCE</option>
+                <option value="multiplication">PRODUCT</option>
+                <option value="division">DIVIDE</option>
+            </select>
+            <input type="submit">
+        </form>
+        <p class="result"></p>
+    </div>
+    <script src="/static/js/index.js"></script>
+{% endblock %}

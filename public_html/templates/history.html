@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator - History</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/history.css">
+</head>
+
+<body>
+    <table>
+        <tr class="header">
+            <th>SEQUENCE</th>
+            <th>NO 1</th>
+            <th>N0 2</th>
+            <th>OPERATION</th>
+            <th>ANSWER</th>
+        </tr>
+        {% for i, row in history %}
+        <tr>
+            <td>{{i + 1}}</td>
+            <td>{{row["num1"]}}</td>
+            <td>{{row["num2"]}}</td>
+            <td>{{row["type"]}}</td>
+            <td>{{row["result"]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>
